@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Счётчик</title>
+    <style>
+        div {
+            margin-top: 250px;
+            width: 200px;
+            height: 100px;
+            border: 5px solid orange;
+            line-height: 100px;
+            border-radius: 100px;
+            background: grey;
+            font-size: 40px;
+            color: gainsboro;
+        }
+
+        div:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="0" onclick="tap1()">0</div>
+    </center>
+<script>
+    number = 0
+
+    function tap1() {
+        number++
+        document.getElementById("0").innerHTML = number
+    }
+</script>
+</body>
+</html>
